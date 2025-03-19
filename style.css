@@ -126,11 +126,13 @@ h1 {
 }
 
 .mds .container img {
-    width: 80%; /* Ajusta a imagem para o tamanho adequado */
+    align-self: center; /* Centraliza a imagem na div */
+    justify-content: space-between;
+    width: 70%; /* Ajusta a imagem para o tamanho adequado */
     height: auto;
-    display: block;
-    margin: 0;
-    margin-top: 10px; /* Coloca a imagem mais próxima da borda superior */
+    display: flex;
+    margin-bottom: 0;
+    margin-top: 0; /* Coloca a imagem mais próxima da borda superior */
 }
 
 .mds .container figcaption {
@@ -140,6 +142,25 @@ h1 {
     color: white; /* Cor do texto da legenda */
     width: 100%; /* Para garantir que a legenda ocupe toda a largura disponível */
 }
+
+
+.mmds .container img .celular{
+    width: 8px; /* Ajusta a imagem para o tamanho adequado */
+    height: auto;
+    display: block;
+    margin: 0;
+    margin-top: 100px; /* Coloca a imagem mais próxima da borda superior */
+}
+
+
+
+
+
+
+
+
+
+
 
 /* FOOTER */
 .footer {
