@@ -100,7 +100,7 @@ h1 {
     font-weight: bold;
 }
 
-/* B.O */
+
 
 .esqueleto .container {
     display: flex;
@@ -113,7 +113,6 @@ h1 {
 }
 
 .esqueleto .container div {
-    /* Alterações feitas pelo o amor aqui */
     background: rgb(14, 10, 88);
     background: linear-gradient(90deg, rgb(13, 10, 70) 0%, rgba(18, 18, 77, 1) 35%, rgba(116, 11, 42, 1) 100%);
     border: 0.5px solid black;
@@ -130,7 +129,6 @@ h1 {
 }
 
 .esqueleto .container img {
-    /* Alterações feitas pelo o amor aqui */
     position: absolute;
     width: 80%;
     height: 60%;
@@ -142,13 +140,11 @@ h1 {
 }
 
 .esqueleto .container div:nth-child(3) img,
-.esqueleto .container div:nth-child(4) img {
-    /* Alterações feitas pelo o amor aqui */
+.esqueleto .container div:nth-child(4) img {  
     top: 35%;
 }
 
 .esqueleto .container .pequeno {
-    /* Alterações feitas pelo o amor aqui */
     position: relative;
     z-index: 1;
     text-align: left;
@@ -160,7 +156,6 @@ h1 {
 }
 
 .esqueleto .container .grande {
-    /* Alterações feitas pelo o amor aqui */
     position: relative;
     z-index: 1;
     text-align: left;
@@ -174,7 +169,6 @@ h1 {
 }
 
 .esqueleto .container .celular {
-    /* Alterações feitas pelo o amor aqui */
     width: 80%;
     height: 60%;
     object-fit: contain;
