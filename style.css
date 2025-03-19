@@ -1,13 +1,17 @@
-body{
-    background-image: linear-gradient(to right, rgba(22, 16, 16, 0.7) 0 100%), url('imagens/Background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+body {
+    background-color: rgb(9, 9, 34);
     font-family: Arial, sans-serif;
     color: white;
 }
 
-header{
+.fundo {
+    background-image: linear-gradient(to right, rgba(22, 16, 16, 0.7) 0 100%), url('imagens/Background.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header.fundo {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,19 +19,29 @@ header{
     margin-top: 0.5px;
 }
 
-/* logo da netflix */
 header img {
     margin-left: 20px;
     max-width: 20%;
     height: auto;
 }
 
-/* .image{
-    background-image: linear-gradient(to right, rgba(22, 16, 16, 0.7) 0 100%), url('imagens/Background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-} */
+section.fundo {
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5px;
+    margin-top: 0.5px;
+}
+
+header img {
+    margin-left: 20px;
+    max-width: 20%;
+    height: auto;
+}
 
 .button {
     background-color: red;
@@ -39,22 +53,21 @@ header img {
     font-weight: bold;
 }
 
-p{
+p {
     font-weight: bold;
     font-size: 15px;
     margin-left: 50px;
     margin-top: 5px;
 }
 
-h4{
+h4 {
     font-size: 30px;
     font-weight: bold;
     margin-left: 50px;
     margin-bottom: 5px;
-
 }
 
-h1{
+h1 {
     font-size: 50px;
     font-weight: bold;
     margin-right: 70px;
@@ -62,20 +75,21 @@ h1{
     margin-bottom: 5px;
 }
 
-.email{
+.email {
     margin-left: 50px;
     width: 300px;
     height: 30px;
     background-color: black;
+    /* Arrumei a cor da letra do botão */
 }
 
-.idioma{
+.idioma {
     background-color: black;
     color: white;
     height: 20px;
 }
 
-.entrar{
+.entrar {
     background-color: red;
     color: white;
     border: none;
@@ -86,12 +100,99 @@ h1{
     font-weight: bold;
 }
 
-.conteiner{
-    background-color: black;
+/* B.O */
+
+.mds .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px 6px; /* Garante que as divs fiquem separadas */
+    margin: 20px;
 }
 
-main .conteiner img{
-    width: 10%;
+.mds .container div {
+    background: rgb(14, 10, 88);
+    background: linear-gradient(90deg, rgba(14, 10, 88, 1) 0%, rgba(18, 18, 77, 1) 35%, rgba(116, 11, 42, 1) 100%);
+    border: 0.5px solid black;
+    border-radius: 15px;
+    width: 550px;
+    height: 220px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha a imagem e a legenda à esquerda */
+    justify-content: flex-start; /* Garante que os itens fiquem alinhados ao topo */
+}
+
+.mds .container img {
+    width: 80%; /* Ajusta a imagem para o tamanho adequado */
     height: auto;
-    border-radius: 100px;
+    display: block;
+    margin: 0;
+    margin-top: 10px; /* Coloca a imagem mais próxima da borda superior */
+}
+
+.mds .container figcaption {
+    margin-top: 10px; /* Adiciona espaço entre a imagem e a legenda */
+    text-align: left; /* Garante que o texto da legenda esteja alinhado à esquerda */
+    font-size: 14px;
+    color: white; /* Cor do texto da legenda */
+    width: 100%; /* Para garantir que a legenda ocupe toda a largura disponível */
+}
+
+/* FOOTER */
+.footer {
+    background-color: #141414;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Para que os itens se ajustem em telas pequenas */
+}
+
+.footer-links,
+.footer-social,
+.footer-country {
+    flex: 1 1 200px; /* Ajusta o tamanho para que ocupem igualmente o espaço disponível */
+    margin: 0 20px;
+}
+
+.footer-links ul,
+.footer-social ul {
+    list-style-type: none;
+}
+
+.footer-links li,
+.footer-social li {
+    margin-bottom: 10px;
+}
+
+.footer-links a,
+.footer-social a {
+    color: #888;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+    color: #fff;
+}
+
+.footer-country {
+    flex: 1 1 100%;
+    margin-top: 30px;
+}
+
+.footer-country p {
+    font-size: 14px;
+    color: #888;
 }
