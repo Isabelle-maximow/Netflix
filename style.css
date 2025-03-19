@@ -113,68 +113,135 @@ h1 {
 }
 
 .mds .container div {
+    /* Alterações feitas pelo o amor aqui */
     background: rgb(14, 10, 88);
     background: linear-gradient(90deg, rgb(13, 10, 70) 0%, rgba(18, 18, 77, 1) 35%, rgba(116, 11, 42, 1) 100%);
     border: 0.5px solid black;
     border-radius: 15px;
     width: 600px;
-    height: 250px;
+    height: 400px;
     padding: 20px;
     display: flex;
-    align-items: center;
     flex-direction: column;
-    align-items: flex-start; /* Alinha a imagem e a legenda à esquerda */
-    justify-content: flex-start; /* Garante que os itens fiquem alinhados ao topo */
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    overflow: hidden; /* Voltado para hidden para conter as imagens */
 }
 
 .mds .container img {
-    align-self: center; /* Centraliza a imagem na div */
-    justify-content: center;
-    width: 50%; /* Ajusta a imagem para o tamanho adequado */
-    height: 100%;
-    display: flex;
-    margin-top: 0; /* Coloca a imagem mais próxima da borda superior */
+    /* Alterações feitas pelo o amor aqui */
+    position: absolute;
+    width: 80%;
+    height: 60%;
+    object-fit: contain;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
 }
 
-.mds .container figcaption {
-    justify-content: left;
-    display: flex;
-    margin-top: 0; /* Adiciona espaço entre a imagem e a legenda */
-    text-align: left; /* Garante que o texto da legenda esteja alinhado à esquerda */
-    font-size: 14px;
-    color: white; /* Cor do texto da legenda */
-    width: 100%; /* Para garantir que a legenda ocupe toda a largura disponível */
-    height: 100%;
-}
-.mds .container .grande {
-    justify-content: left;
-    display: flex;
-    margin-top: 5px; /* Adiciona espaço entre a imagem e a legenda */
-    text-align: left; /* Garante que o texto da legenda esteja alinhado à esquerda */
-    font-size: 24px;
-    color: white; /* Cor do texto da legenda */
-    width: 100%; /* Para garantir que a legenda ocupe toda a largura disponível */
-    height: 100%;
-    margin-bottom: 100px;
+.mds .container div:nth-child(3) img,
+.mds .container div:nth-child(4) img {
+    /* Alterações feitas pelo o amor aqui */
+    top: 35%;
 }
 
-
-.mds .container .celular{
-    width: 90%; /* Ajusta a imagem para o tamanho adequado */
-    align-self: center; /* Centraliza a imagem na div */
-    justify-content: center;
-    height: 100%;
-    display: flex;
-    margin-bottom: 0;
+.mds .container .pequeno {
+    /* Alterações feitas pelo o amor aqui */
+    position: relative;
+    z-index: 1;
+    text-align: left;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    font-size: 12px;
     margin-top: 0;
 }
 
+.mds .container .grande {
+    /* Alterações feitas pelo o amor aqui */
+    position: relative;
+    z-index: 1;
+    text-align: left;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 0;
+    font-weight: bold;
+    margin-top: 60%; /* Ajustado para acomodar a nova posição da imagem */
+}
 
+.mds .container .celular {
+    /* Alterações feitas pelo o amor aqui */
+    width: 80%;
+    height: 60%;
+    object-fit: contain;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
 
+/* Media Queries para Responsividade */
+@media screen and (max-width: 1200px) {
+    .mds .container div {
+        width: 500px;
+        height: 350px;
+    }
+}
 
+@media screen and (max-width: 992px) {
+    .mds .container div {
+        width: 450px;
+        height: 300px;
+    }
+}
 
+@media screen and (max-width: 768px) {
+    .mds .container div {
+        width: 100%;
+        height: 300px;
+    }
+    
+    .mds .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
+@media screen and (max-width: 576px) {
+    .mds .container div {
+        height: 250px;
+        padding: 15px;
+    }
+    
+    .mds .container .grande {
+        font-size: 16px;
+    }
+    
+    .mds .container figcaption {
+        font-size: 11px;
+    }
+}
 
+/* Ajustes para telas muito pequenas */
+@media screen and (max-width: 375px) {
+    .mds .container div {
+        height: 200px;
+        padding: 10px;
+    }
+    
+    .mds .container .grande {
+        font-size: 14px;
+    }
+    
+    .mds .container figcaption {
+        font-size: 10px;
+    }
+}
 
 /* FOOTER */
 .footer {
