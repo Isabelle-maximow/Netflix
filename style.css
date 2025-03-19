@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(9, 9, 34);
+    background-color: rgb(4, 4, 15);
     font-family: Arial, sans-serif;
     color: white;
 }
@@ -107,19 +107,21 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 20px 6px; /* Garante que as divs fiquem separadas */
-    margin: 20px;
+    gap: 10px ; /* Garante que as divs fiquem separadas */
+    margin: 10px;
+    padding: 10px;
 }
 
 .mds .container div {
     background: rgb(14, 10, 88);
-    background: linear-gradient(90deg, rgba(14, 10, 88, 1) 0%, rgba(18, 18, 77, 1) 35%, rgba(116, 11, 42, 1) 100%);
+    background: linear-gradient(90deg, rgb(13, 10, 70) 0%, rgba(18, 18, 77, 1) 35%, rgba(116, 11, 42, 1) 100%);
     border: 0.5px solid black;
     border-radius: 15px;
-    width: 550px;
-    height: 220px;
+    width: 600px;
+    height: 250px;
     padding: 20px;
     display: flex;
+    align-items: center;
     flex-direction: column;
     align-items: flex-start; /* Alinha a imagem e a legenda à esquerda */
     justify-content: flex-start; /* Garante que os itens fiquem alinhados ao topo */
@@ -127,29 +129,44 @@ h1 {
 
 .mds .container img {
     align-self: center; /* Centraliza a imagem na div */
-    justify-content: space-between;
-    width: 70%; /* Ajusta a imagem para o tamanho adequado */
-    height: auto;
+    justify-content: center;
+    width: 50%; /* Ajusta a imagem para o tamanho adequado */
+    height: 100%;
     display: flex;
-    margin-bottom: 0;
     margin-top: 0; /* Coloca a imagem mais próxima da borda superior */
 }
 
 .mds .container figcaption {
-    margin-top: 10px; /* Adiciona espaço entre a imagem e a legenda */
+    justify-content: left;
+    display: flex;
+    margin-top: 0; /* Adiciona espaço entre a imagem e a legenda */
     text-align: left; /* Garante que o texto da legenda esteja alinhado à esquerda */
     font-size: 14px;
     color: white; /* Cor do texto da legenda */
     width: 100%; /* Para garantir que a legenda ocupe toda a largura disponível */
+    height: 100%;
+}
+.mds .container .grande {
+    justify-content: left;
+    display: flex;
+    margin-top: 5px; /* Adiciona espaço entre a imagem e a legenda */
+    text-align: left; /* Garante que o texto da legenda esteja alinhado à esquerda */
+    font-size: 24px;
+    color: white; /* Cor do texto da legenda */
+    width: 100%; /* Para garantir que a legenda ocupe toda a largura disponível */
+    height: 100%;
+    margin-bottom: 100px;
 }
 
 
-.mmds .container img .celular{
-    width: 8px; /* Ajusta a imagem para o tamanho adequado */
-    height: auto;
-    display: block;
-    margin: 0;
-    margin-top: 100px; /* Coloca a imagem mais próxima da borda superior */
+.mds .container .celular{
+    width: 90%; /* Ajusta a imagem para o tamanho adequado */
+    align-self: center; /* Centraliza a imagem na div */
+    justify-content: center;
+    height: 100%;
+    display: flex;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 
@@ -161,7 +178,7 @@ h1 {
 
 /* FOOTER */
 .footer {
-    background-color: #141414;
+    background-color: #06061f;
     color: #fff;
     padding: 50px 0;
     text-align: center;
