@@ -159,9 +159,6 @@ h1 {
 
 
 
-
-
-
 /* FOOTER */
 .footer {
     background-color: #141414;
@@ -179,32 +176,26 @@ h1 {
     flex-wrap: wrap; /* Para que os itens se ajustem em telas pequenas */
 }
 
-.footer-links,
-.footer-social,
-.footer-country {
+.footer-links, .footer-social, .footer-country {
     flex: 1 1 200px; /* Ajusta o tamanho para que ocupem igualmente o espaço disponível */
     margin: 0 20px;
 }
 
-.footer-links ul,
-.footer-social ul {
+.footer-links ul, .footer-social ul {
     list-style-type: none;
 }
 
-.footer-links li,
-.footer-social li {
+.footer-links li, .footer-social li {
     margin-bottom: 10px;
 }
 
-.footer-links a,
-.footer-social a {
+.footer-links a, .footer-social a {
     color: #888;
     text-decoration: none;
     font-size: 14px;
 }
 
-.footer-links a:hover,
-.footer-social a:hover {
+.footer-links a:hover, .footer-social a:hover {
     color: #fff;
 }
 
